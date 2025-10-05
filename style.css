@@ -1,0 +1,104 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.first_img{
+    background-image: url(img/nature5.jpg);
+    /* min-height: 400px; */
+    /* opacity: 0.8; */
+    min-height: 600px;
+
+}
+.second_img{
+    background-image: url(img/nature2.jpg);
+     opacity: 0.7;
+    min-height: 500px;
+
+}
+.third_img{
+    background-image: url(img/nature3.jpg);
+    /* opacity: 0.9 ; */
+    min-height: 500px;
+
+   
+}
+.fourth_img{
+    background-image: url(img/nature6.jpg);
+    opacity: 0.7;
+    min-height: 500px;
+
+}
+
+.first_img,.second_img,.third_img,.fourth_img{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section{
+    text-align: center;
+    padding: 4rem 6rem;
+}
+.light{
+    background-color: rgb(50, 55, 56);
+   color: #9c9b9b;
+}
+.dark{
+    background-color: rgb(156, 162, 221);
+    color: #443c3c;
+}
+
+.img{
+    position:relative ;
+}
+
+.img div{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* background-color: rgb(133, 94, 94); */
+    color: #ddd;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.first_img div{
+    color : black;
+    /* background-color: rgb(77, 74, 70); */
+    padding: 20px;
+
+}
+
+.first_img span{
+    color: whitesmoke;
+    background-color: #111010;
+    padding: 20px;
+    opacity: 0.8;
+    
+    
+    
+}
+
+@media (min-width : 50px) and (max-width : 800px) {
+    .first_img span{
+        width: 600px;
+        color: rgb(129, 231, 231);
+        
+       
+    }
+
+}
+
